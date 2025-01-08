@@ -1,0 +1,69 @@
+* {
+    font-family: verdana;
+    margin: 0;
+}
+
+body {
+    background: #eee;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.flex-container{
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: nowrap; */
+    /* flex-flow: row; makes the main axis horizontal and cross axis vertical, any justify-content here will be applied horizontally */
+    /* flex-flow: column; makes the main axis vertical and cross axis horizontal, any justify-content here will be applied horizontally */
+    /* while we are using the flex-flow: row; justify content affects the main axis (horizontal axis) 
+    and align-items affects the cross axis (vertical axis) */
+
+    /* while we are using the flex-flow: column; justify content affects the main axis (now vertical axis) 
+    and align-items affects the cross axis (now horizontal axis) */
+}
+.box{
+    height: 100px;
+    flex-basis: 200px;  /* starting width of of all elements */
+    /* flex-grow: 1; */
+}
+/* flex grow determines the ratio at which they grow*/
+/* flex shrink determines the ratio at which they shrink as the browser gets smaller
+    the bigger the number flex-shrink has, the more it shrinks
+*/
+
+/* flex wrap is when you reach the minimum width I want you to wrap the last element to the next line */
+/*                  **flex equation**
+    flex: flex-grow flex-shrink flex-basis;
+    ex: flex: 1 1 200px;
+ */
+.one{
+    background-color: red;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+.two{
+    background-color: blue;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+}
+.three{
+    background-color: green;
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+}
+
+/* Element Order: Elements with lowest order value, has the first order */
+.one{
+    order: 3;
+}
+.two{
+    order: 1;
+}
+.three{
+    order: 2;
+}
