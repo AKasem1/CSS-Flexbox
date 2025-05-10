@@ -1,0 +1,78 @@
+* {
+    font-family: verdana;
+    margin: 0;
+}
+
+body {
+    background: #eee;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+a.fb{
+    background: url('https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-white-icon.png') no-repeat center;
+    background-size: 80%;
+}
+
+a.tw{
+    background: url('https://img.icons8.com/ios7/600/FFFFFF/twitter.png') no-repeat center;
+    background-size: 80%;
+}
+
+.social a{
+    background-size: 80px;
+}
+
+.social a{
+    text-indent: -10000px;
+}
+
+.social{
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+nav ul .social {
+    flex: 1 1 0;
+}
+
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    nav li {
+        flex: 1 1 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social{
+        margin: 0;
+    }
+    
+}

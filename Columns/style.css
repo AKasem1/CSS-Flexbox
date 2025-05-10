@@ -1,0 +1,12 @@
+/* Using Columns instead of flex or grid */
+
+.columns {
+    columns: 150px 3;
+    gap: 20px;
+    column-rule: 1px solid #ccc;
+}
+
+.intro {
+    column-span: all;
+    color: deeppink;
+}
